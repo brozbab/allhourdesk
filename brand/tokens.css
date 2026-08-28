@@ -1,0 +1,46 @@
+/* AllHourDesk — design tokens (Night Log / 4A)
+   Fonts: Instrument Serif (display) · Archivo (UI) · JetBrains Mono (data)
+   @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+*/
+:root{
+  /* core */
+  --ahd-oxblood:      #5B1A1E; /* primary accent, CTAs, hero field */
+  --ahd-oxblood-deep: #241012; /* dark surface (after-dark variant) */
+  --ahd-ink:          #1A1614; /* text, rules, footer band */
+  --ahd-bone:         #F7F4EF; /* page background */
+  --ahd-bone-2:       #EFEAE1; /* alternate band background */
+  --ahd-clay:         #D9A08A; /* accent on dark backgrounds only */
+
+  /* support */
+  --ahd-ink-70:       #4A423E; /* body copy */
+  --ahd-ink-45:       #8A817B; /* captions, meta */
+  --ahd-rule:         #D7CFC4; /* hairline on bone */
+  --ahd-rule-strong:  #1A1614; /* structural hairline */
+  --ahd-rule-dark:    rgba(242,233,224,.22); /* hairline on dark */
+
+  /* type */
+  --ahd-font-display: 'Instrument Serif', Georgia, serif;
+  --ahd-font-ui:      'Archivo', system-ui, -apple-system, sans-serif;
+  --ahd-font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  --ahd-h1: 88px/0.98 var(--ahd-font-display);
+  --ahd-h2: 44px/1.05 var(--ahd-font-display);
+  --ahd-h3: 26px/1.2  var(--ahd-font-display);
+  --ahd-body: 400 17px/1.65 var(--ahd-font-ui);
+  --ahd-small: 400 14.5px/1.6 var(--ahd-font-ui);
+  --ahd-label: 700 11px/1 var(--ahd-font-mono); /* letter-spacing:.10em; uppercase */
+  --ahd-data: 400 12.5px/1.5 var(--ahd-font-mono);
+
+  /* layout */
+  --ahd-rail: 104px;      /* left hour-rail column */
+  --ahd-pad-x: 56px;
+  --ahd-pad-y: 56px;
+  --ahd-radius: 0;        /* square by default; 10px only for key-card objects */
+}
+
+/* usage rules
+   · one accent only: oxblood on bone, clay on dark. Never both on the same surface.
+   · rules are 1px, never shadows, except elevated "key card" objects.
+   · mono is for time, codes and labels — never for sentences.
+   · buttons are square, mono, uppercase, .08em tracking.
+*/
