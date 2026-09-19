@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Product — AllHourDesk</title>
+<meta name="description" content="How AllHourDesk works: answers the call, quotes live rates from your PMS, holds the room, takes payment by secure link, and confirms the booking — or releases the hold if payment never arrives.">
+<link rel="icon" href="brand/logo/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"></circle><rect x="10" y="14" width="2" height="6" rx="1" fill="currentColor"></rect><rect x="14.5" y="10" width="2" height="14" rx="1" fill="currentColor"></rect><rect x="19" y="12.5" width="2" height="9" rx="1" fill="currentColor"></rect><rect x="23.5" y="15.5" width="2" height="3" rx="1" fill="currentColor"></rect></svg>
+      <span class="nav-wordmark">AllHourDesk</span>
+    </a>
+    <div class="nav-links">
+      <a href="product.html" aria-current="page">Product</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="scenarios.html">Scenarios</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html#demo">Book a demo</a>
+    </div>
+  </nav>
+
+  <div class="page-head has-photo photo-phone">
+    <span class="hero-kicker">Product</span>
+    <h1>It doesn't take messages. It completes bookings.</h1>
+    <p>Most systems that answer a hotel phone out of hours can take a name and a number. The difference here is what happens next: AllHourDesk holds real inventory, collects payment, and writes a confirmed reservation into your system of record — or gives the room back if payment never arrives.</p>
+  </div>
+
+  <!-- five operations -->
+  <div class="rail-row">
+    <div class="rail">01</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Five operations, on every call</h2>
+      <p class="small" style="max-width:600px;margin:0 0 32px">Everything the agent can do reduces to these. Each one runs against your live back-end, not a copy of it.</p>
+      <div class="rows">
+        <div class="row"><span class="k">SEARCH</span><span class="v">Queries live availability for the caller's dates and party size.</span></div>
+        <div class="row"><span class="k">LIST</span><span class="v">Reads back real room types, rates and cancellation terms — never an invented price.</span></div>
+        <div class="row"><span class="k">PROVISION</span><span class="v">Places a temporary hold on the chosen room so it can't be sold twice while the guest pays.</span></div>
+        <div class="row"><span class="k">BOOK</span><span class="v">Confirms the reservation once payment clears, and returns the confirmation code.</span></div>
+        <div class="row"><span class="k">CANCEL</span><span class="v">Cancels an existing booking after verifying the caller, and triggers the refund.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- the hard part -->
+  <div class="rail-row alt">
+    <div class="rail">02</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">The hard part: hold → pay → confirm</h2>
+      <p class="small" style="max-width:620px;margin:0 0 32px">A phone call and a payment happen on two different clocks. The guest is on the line; the card is charged a few minutes later, on their phone, after they've hung up. Between those two moments the room has to be genuinely unavailable to everyone else — and if the payment never lands, it has to go back on sale without anyone touching it.</p>
+
+      <figure class="figure">
+        <svg viewBox="0 0 920 380" class="dg" role="img" aria-label="A booking is quoted and held while the guest is on the call. After they hang up, the held room exits one of two ways: payment arrives and the reservation is confirmed in the hotel's PMS, or the deadline passes unpaid and the hold is released back to sale.">
+          <defs>
+            <marker id="ar" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#1A1614"/>
+            </marker>
+            <marker id="ar-ox" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#5B1A1E"/>
+            </marker>
+          </defs>
+
+          <text x="24" y="30" class="dg-lbl">ON THE CALL</text>
+          <text x="440" y="30" class="dg-lbl">AFTER THE CALL</text>
+          <line x1="404" y1="50" x2="404" y2="306" class="dg-dash"/>
+          <text x="404" y="326" class="dg-lbl" text-anchor="middle">guest hangs up</text>
+
+          <rect x="24"  y="150" width="136" height="60" class="dg-box"/>
+          <text x="92"  y="175" class="dg-t"    text-anchor="middle">Quote</text>
+          <text x="92"  y="195" class="dg-t-sm" text-anchor="middle">live rates only</text>
+
+          <rect x="232" y="150" width="136" height="60" class="dg-box"/>
+          <text x="300" y="175" class="dg-t"    text-anchor="middle">Hold</text>
+          <text x="300" y="195" class="dg-t-sm" text-anchor="middle">room blocked</text>
+
+          <rect x="440" y="150" width="170" height="60" class="dg-box"/>
+          <text x="525" y="175" class="dg-t"    text-anchor="middle">Payment link</text>
+          <text x="525" y="195" class="dg-t-sm" text-anchor="middle">sent to their phone</text>
+
+          <line x1="160" y1="180" x2="226" y2="180" class="dg-line" marker-end="url(#ar)"/>
+          <text x="193" y="170" class="dg-lbl" text-anchor="middle">picks</text>
+
+          <line x1="368" y1="180" x2="434" y2="180" class="dg-line" marker-end="url(#ar)"/>
+
+          <path d="M 610,180 H 660 V 101 H 720" class="dg-line-ox" marker-end="url(#ar-ox)"/>
+          <text x="693" y="92" class="dg-lbl-ox" text-anchor="middle">PAID</text>
+
+          <path d="M 610,180 H 660 V 279 H 720" class="dg-line" marker-end="url(#ar)"/>
+          <text x="693" y="270" class="dg-lbl" text-anchor="middle">UNPAID</text>
+
+          <rect x="730" y="70"  width="165" height="62" class="dg-box-accent"/>
+          <text x="812" y="95"  class="dg-t"    text-anchor="middle">Confirmed</text>
+          <text x="812" y="115" class="dg-t-sm" text-anchor="middle">written to your PMS</text>
+
+          <rect x="730" y="248" width="165" height="62" class="dg-box"/>
+          <text x="812" y="273" class="dg-t"    text-anchor="middle">Released</text>
+          <text x="812" y="293" class="dg-t-sm" text-anchor="middle">back on sale</text>
+
+          <path d="M 300,336 V 348 H 660 V 336" class="dg-dash"/>
+          <text x="480" y="370" class="dg-lbl" text-anchor="middle">ROOM UNAVAILABLE TO EVERYONE ELSE FOR THIS WINDOW</text>
+        </svg>
+        <figcaption>The lower branch is the one worth asking every vendor about: a hold that is never paid for releases itself on a deadline, with no one at the property having to notice it was ever taken.</figcaption>
+      </figure>
+
+      <div class="steps" style="margin-top:44px">
+        <div class="step">
+          <span class="step-n">01</span>
+          <div>
+            <h3>Quote</h3>
+            <p>The agent reads back live options. Nothing is reserved yet.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <div>
+            <h3>Hold</h3>
+            <p>The guest picks one and the room is held in your back-end, with a deadline attached.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <div>
+            <h3>Pay</h3>
+            <p>A secure payment link goes to the guest's phone by WhatsApp or SMS while they're still on the call. Card details are never spoken aloud.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">04</span>
+          <div>
+            <h3>Confirm</h3>
+            <p>Payment clears, the reservation is confirmed in your system, and the guest gets the confirmation code on the same thread.</p>
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-n">05</span>
+          <div>
+            <h3>Or release</h3>
+            <p>No payment by the deadline and the hold is released automatically — the room goes back on sale without a human noticing it was ever gone.</p>
+          </div>
+        </div>
+      </div>
+      <div class="notice">
+        <span class="label">Why this matters</span>
+        <p>The failure everyone worries about is the one where money is taken and the room isn't secured. That path is handled explicitly: the booking is either completed, refunded, or escalated to your team — never silently dropped.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- integrations -->
+  <!-- photo: the guest's side of the payment step -->
+  <div class="photo-split">
+    <div class="photo">
+      <img src="img/guest-phone-night.jpg" width="1100" height="1650" loading="lazy"
+           alt="Hands holding a phone lit up in a dark room at night.">
+    </div>
+    <div class="text">
+      <span class="hero-kicker">After the call</span>
+      <h2>The guest pays on their own phone.</h2>
+      <p>No card number read aloud to a machine, nothing sensitive on a recording. The link arrives by WhatsApp or SMS while the room is still held — and the confirmation follows the moment the payment clears.</p>
+    </div>
+  </div>
+
+  <div class="rail-row">
+    <div class="rail">03</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Your back-end, whatever it is</h2>
+      <p class="small" style="max-width:620px;margin:0 0 32px">Hotels run wildly different systems — modern REST APIs, channel managers, and legacy XML connectors that disagree about basic things like whether a "hold" exists at all. All of it sits behind one internal interface, so adding a property doesn't mean rebuilding the product.</p>
+      <div class="cols-3">
+        <div>
+          <span class="label">Modern PMS</span>
+          <p>Apaleo is live and running real bookings today. Mews and other open-API systems follow the same integration path.</p>
+        </div>
+        <div>
+          <span class="label">Channel managers</span>
+          <p>For properties pooling inventory across OTAs and direct channels.</p>
+        </div>
+        <div>
+          <span class="label">Legacy connectors</span>
+          <p>OTA-XML style connectors, where capabilities vary. Where a system has no native hold, the platform simulates one and manages the risk explicitly rather than pretending it isn't there.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- telephony -->
+  <div class="rail-row alt">
+    <div class="rail">04</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Keep the number your guests already have</h2>
+      <p class="small" style="max-width:620px;margin:0 0 32px">Your published number is on signage, on Google, on every past guest's phone. It doesn't change. Three ways to route it, in order of how much commitment they ask for.</p>
+
+      <figure class="figure" style="margin-bottom:38px">
+        <svg viewBox="0 0 920 300" class="dg" role="img" aria-label="A guest dials the hotel's existing published number. It rings the front desk first; only if no one answers does the call fall through to AllHourDesk, which then writes the booking into the hotel's PMS.">
+          <defs>
+            <marker id="ar2" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#1A1614"/>
+            </marker>
+            <marker id="ar2-ox" viewBox="0 0 10 10" refX="9.5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+              <path d="M0,0 L10,5 L0,10 z" fill="#5B1A1E"/>
+            </marker>
+          </defs>
+
+          <rect x="24" y="124" width="120" height="56" class="dg-box"/>
+          <text x="84" y="158" class="dg-t" text-anchor="middle">Guest</text>
+
+          <line x1="144" y1="152" x2="184" y2="152" class="dg-line" marker-end="url(#ar2)"/>
+          <text x="164" y="142" class="dg-lbl" text-anchor="middle">dials</text>
+
+          <rect x="190" y="124" width="175" height="56" class="dg-box"/>
+          <text x="277" y="148" class="dg-t" text-anchor="middle">Your number</text>
+          <text x="277" y="167" class="dg-t-sm" text-anchor="middle">unchanged</text>
+
+          <path d="M 365,152 H 425" class="dg-line"/>
+
+          <path d="M 425,152 V 64 H 524" class="dg-line" marker-end="url(#ar2)"/>
+          <text x="478" y="54" class="dg-lbl" text-anchor="middle">RINGS FIRST</text>
+
+          <rect x="530" y="36" width="175" height="56" class="dg-box"/>
+          <text x="617" y="70" class="dg-t" text-anchor="middle">Your front desk</text>
+
+          <path d="M 425,152 V 242 H 524" class="dg-line-ox" marker-end="url(#ar2-ox)"/>
+          <text x="478" y="232" class="dg-lbl-ox" text-anchor="middle">NO ANSWER</text>
+
+          <rect x="530" y="212" width="175" height="60" class="dg-box-accent"/>
+          <text x="617" y="238" class="dg-t" text-anchor="middle">AllHourDesk</text>
+          <text x="617" y="257" class="dg-t-sm" text-anchor="middle">answers, books, takes payment</text>
+
+          <line x1="705" y1="242" x2="764" y2="242" class="dg-line" marker-end="url(#ar2)"/>
+          <text x="734" y="232" class="dg-lbl" text-anchor="middle">BOOKS</text>
+
+          <rect x="770" y="212" width="126" height="60" class="dg-box"/>
+          <text x="833" y="248" class="dg-t" text-anchor="middle">Your PMS</text>
+        </svg>
+        <figcaption>Forward-on-no-answer, the default for every pilot. Your team gets first refusal on every call; the AI only ever picks up what would otherwise have rung out.</figcaption>
+      </figure>
+
+      <div class="rows">
+        <div class="row"><span class="k">FORWARD</span><span class="v"><strong>The default, and where every pilot starts.</strong> Your line rings first; only unanswered calls fall through to AllHourDesk. Minutes to set up, and switching it off restores exactly what you had before.</span></div>
+        <div class="row"><span class="k">PORT</span><span class="v">The number moves to us permanently, once you're past evaluating. A real telecom transfer — typically 5–15 business days, and timelines vary by country.</span></div>
+        <div class="row"><span class="k">SIP</span><span class="v">For properties with a modern SIP-capable PBX that would rather keep routing logic in-house. Lower cost at volume, more setup.</span></div>
+      </div>
+      <div class="notice">
+        <span class="label">Deliberate posture</span>
+        <p>Forward-on-no-answer means the AI is overflow and after-hours cover, not a replacement for your front desk. Your team keeps every call it wants.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- voice -->
+  <div class="rail-row">
+    <div class="rail">05</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Language and the feel of the call</h2>
+      <div class="grid-2">
+        <div><span class="label">Multilingual</span><p>European languages plus Arabic, detected from how the caller speaks rather than chosen from a menu.</p></div>
+        <div><span class="label">Built for interruption</span><p>Callers talk over the agent, change their minds, and trail off. Turn-taking is tuned so a "yeah" or "mm-hmm" doesn't derail the sentence.</p></div>
+        <div><span class="label">Grounded answers</span><p>Rates and room types come from tool calls against your inventory. If a lookup fails, the agent says there's a technical problem — it does not guess a price.</p></div>
+        <div><span class="label">Logged for the morning</span><p>Every call leaves a transcript and a booking audit trail your team can read at handover.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- compliance -->
+  <div class="rail-row alt">
+    <div class="rail">06</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Compliance as a design input</h2>
+      <p class="small" style="max-width:620px;margin:0 0 32px">Four regimes apply at once to a recorded, AI-answered, card-taking phone call in Europe and the Gulf. They shaped the architecture rather than being audited onto it afterwards.</p>
+      <div class="grid-2">
+        <div><span class="label">EU AI Act</span><p>The agent discloses that it's an AI at the start of every call, in the caller's language.</p></div>
+        <div><span class="label">GDPR &amp; consent</span><p>Recording, consent capture and retention are configurable per tenant and per country, because EU consent law is not uniform.</p></div>
+        <div><span class="label">PCI-DSS</span><p>Payment happens on a hosted payment page. Card data never enters the call, our systems, or yours.</p></div>
+        <div><span class="label">Data residency</span><p>EU-hosted by default, with region partitioning for Gulf properties under Saudi PDPL.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <h2>See it answer your own number.</h2>
+      <span class="meta">A demo call, on your line, with your rates</span>
+    </div>
+    <a class="btn btn-on-dark" href="contact.html#demo">Book a demo</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <span class="nav-wordmark">AllHourDesk</span>
+        <p class="footer-blurb">A 24/7 AI voice concierge that answers your hotel's phone, books against live inventory, and takes payment — for properties in Europe and the Middle East.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">How it works</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="scenarios.html">Scenarios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#demo">Book a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 AllHourDesk</span>
+      <span><a href="mailto:info@allhourdesk.com">info@allhourdesk.com</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
