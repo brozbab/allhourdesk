@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scenarios — AllHourDesk</title>
+<meta name="description" content="Four illustrative scenarios showing how AllHourDesk handles a call end to end — late-night direct bookings, front-desk overflow, non-English callers, and changes to existing reservations.">
+<link rel="icon" href="brand/logo/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"></circle><rect x="10" y="14" width="2" height="6" rx="1" fill="currentColor"></rect><rect x="14.5" y="10" width="2" height="14" rx="1" fill="currentColor"></rect><rect x="19" y="12.5" width="2" height="9" rx="1" fill="currentColor"></rect><rect x="23.5" y="15.5" width="2" height="3" rx="1" fill="currentColor"></rect></svg>
+      <span class="nav-wordmark">AllHourDesk</span>
+    </a>
+    <div class="nav-links">
+      <a href="product.html">Product</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="scenarios.html" aria-current="page">Scenarios</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html#demo">Book a demo</a>
+    </div>
+  </nav>
+
+  <div class="page-head has-photo photo-corridor">
+    <span class="hero-kicker">Scenarios</span>
+    <h1>Four calls, walked through.</h1>
+    <p>These are illustrative scenarios, not customer case studies. AllHourDesk is early and onboarding its first properties — rather than dress that up with testimonials we haven't earned, here is exactly what the system does, step by step, in the situations it's built for.</p>
+  </div>
+
+  <div class="rail-row">
+    <div class="rail">00</div>
+    <div class="rail-body" style="padding-bottom:40px">
+      <div class="notice">
+        <span class="label">Please read this first</span>
+        <p><strong>Every scenario below is illustrative.</strong> The properties, callers and confirmation codes are composed for explanation — none of them describe a real guest or a real customer of ours, and none should be read as a performance claim. What <em>is</em> real is the mechanism: the sequence of steps each scenario describes is how the system actually behaves, and it has been run end to end against live hotel inventory and live payments.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- scenario 1 -->
+  <div class="rail-row alt">
+    <div class="rail">01</div>
+    <div class="rail-body">
+      <span class="meta">Illustrative scenario · 03:12</span>
+      <h2 style="margin:10px 0 12px">The cancelled connection</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">A traveller is stranded when their late connection is cancelled. They search hotels near the airport and call the first three numbers. Two ring out. The third is a property running AllHourDesk with overnight forwarding enabled.</p>
+      <div class="logstrip" style="border-top:1px solid var(--ahd-ink)">
+        <div class="logstrip-lines" style="padding-left:0;padding-right:0">
+          <span><span class="t">03:12:01</span> &nbsp; call answered · agent discloses it is an AI</span>
+          <span><span class="t">03:12:24</span> &nbsp; dates captured · tonight → tomorrow · 1 guest</span>
+          <span><span class="t">03:12:38</span> &nbsp; availability queried · 2 rates returned from PMS</span>
+          <span><span class="t">03:13:02</span> &nbsp; guest selects flexible rate · room held</span>
+          <span><span class="t">03:13:20</span> &nbsp; payment link sent by WhatsApp</span>
+          <span><span class="t">03:16:04</span> &nbsp; paid · reservation confirmed · confirmation sent</span>
+        </div>
+      </div>
+      <p class="small" style="max-width:640px;margin-top:24px"><strong>What the morning shift sees:</strong> a confirmed booking already in the PMS, a transcript of the call, and a paid folio. No callback list, no held room to chase.</p>
+    </div>
+  </div>
+
+  <!-- scenario 2 -->
+  <div class="rail-row">
+    <div class="rail">02</div>
+    <div class="rail-body">
+      <span class="meta">Illustrative scenario · 21:40</span>
+      <h2 style="margin:10px 0 12px">Two check-ins and a ringing phone</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">One receptionist is on duty. Two guests are checking in at once, and the phone rings for the fourth time in ten minutes. Historically that call either gets a rushed answer or none at all.</p>
+      <div class="rows">
+        <div class="row"><span class="k">RING&nbsp;1–4</span><span class="v">The desk line rings first, as always. The receptionist stays with the guests in front of them.</span></div>
+        <div class="row"><span class="k">FALLTHROUGH</span><span class="v">Unanswered after the configured number of rings, the call forwards to AllHourDesk instead of ringing out.</span></div>
+        <div class="row"><span class="k">HANDLED</span><span class="v">The caller wanted to know whether there's parking and whether they can arrive at midnight. Both answered from the property's own knowledge base.</span></div>
+        <div class="row"><span class="k">LOGGED</span><span class="v">The exchange appears in the call log, so the desk knows what was said without having to ask.</span></div>
+      </div>
+      <p class="small" style="max-width:640px;margin-top:24px"><strong>The point:</strong> nothing was taken away from the front desk. The call that was going to be lost was the only one that changed hands.</p>
+    </div>
+  </div>
+
+  <!-- scenario 3 -->
+  <div class="rail-row alt">
+    <div class="rail">03</div>
+    <div class="rail-body">
+      <span class="meta">Illustrative scenario · 02:05</span>
+      <h2 style="margin:10px 0 12px">A caller who doesn't speak the local language</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">A Spanish-speaking guest calls a property in Ireland. At 02:00 there is no one on site who speaks Spanish, and the caller's English is limited to a few words.</p>
+      <div class="grid-2">
+        <div><span class="label">Detected, not selected</span><p>The language is picked up from how the caller speaks. There's no "press 2 for Spanish" menu to navigate in a language they don't read.</p></div>
+        <div><span class="label">Disclosed in their language</span><p>The AI disclosure is given in Spanish, not in the property's default language.</p></div>
+        <div><span class="label">Same five operations</span><p>Availability, hold, payment link and confirmation work identically — the language changes, the mechanism doesn't.</p></div>
+        <div><span class="label">Written record</span><p>The transcript is available to staff afterwards regardless of the language it was conducted in.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scenario 4 -->
+  <div class="rail-row">
+    <div class="rail">04</div>
+    <div class="rail-body">
+      <span class="meta">Illustrative scenario · 23:50</span>
+      <h2 style="margin:10px 0 12px">The booking that has to be cancelled</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">A guest booked two nights and now can't travel. They call late, expecting to leave a message and hope somebody acts on it before the cancellation window closes.</p>
+      <div class="steps">
+        <div class="step"><span class="step-n">01</span><div><h3>Identify</h3><p>The agent looks up the reservation and confirms the caller's identity against the booking before doing anything to it.</p></div></div>
+        <div class="step"><span class="step-n">02</span><div><h3>State the terms</h3><p>The cancellation policy actually attached to that rate is read back — not a general policy, the one on their booking.</p></div></div>
+        <div class="step"><span class="step-n">03</span><div><h3>Cancel and refund</h3><p>The reservation is cancelled in the PMS and the refund is triggered through the same payment provider that took it.</p></div></div>
+        <div class="step"><span class="step-n">04</span><div><h3>Inventory returns</h3><p>The room goes back on sale immediately rather than at the start of the next shift.</p></div></div>
+      </div>
+      <p class="small" style="max-width:640px;margin-top:24px"><strong>Why it matters commercially:</strong> a room released at 23:50 can still be sold for that night. The same room released at 09:00 usually can't.</p>
+    </div>
+  </div>
+
+  <!-- what's actually verified -->
+  <div class="rail-row alt no-rule">
+    <div class="rail">05</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">What we can actually evidence today</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">Rather than testimonials, here is the current, checkable status — the same answer you'd get if you asked us directly on a call.</p>
+      <div class="rows">
+        <div class="row"><span class="k">PROVEN</span><span class="v">The full path — inbound call, live availability lookup, room held, payment link delivered, payment taken, reservation confirmed in the PMS, confirmation messaged to the guest — has been run end to end against a live property management system and live payments.</span></div>
+        <div class="row"><span class="k">LIVE</span><span class="v">Apaleo integration, WhatsApp and SMS delivery, and hosted card payments are working today.</span></div>
+        <div class="row"><span class="k">EARLY</span><span class="v">We are onboarding our first properties now. There are no customer case studies yet, which is why there are none on this page.</span></div>
+        <div class="row"><span class="k">OPEN</span><span class="v">We're looking for design-partner properties in Europe and the Middle East who want influence over what gets built next.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <h2>Be one of the first properties on it.</h2>
+      <span class="meta">Design partners get direct input on the roadmap</span>
+    </div>
+    <a class="btn btn-on-dark" href="contact.html#demo">Talk to us</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <span class="nav-wordmark">AllHourDesk</span>
+        <p class="footer-blurb">A 24/7 AI voice concierge that answers your hotel's phone, books against live inventory, and takes payment — for properties in Europe and the Middle East.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">How it works</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="scenarios.html">Scenarios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#demo">Book a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 AllHourDesk</span>
+      <span><a href="mailto:info@allhourdesk.com">info@allhourdesk.com</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

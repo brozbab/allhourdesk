@@ -6,140 +6,259 @@
 <title>AllHourDesk — Your night manager never sleeps</title>
 <meta name="description" content="A voice AI agent on your hotel's own line: answers 24/7 in the guest's language, checks live availability in your PMS, holds the room and takes payment.">
 <link rel="icon" href="brand/logo/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-<style>
-  *{box-sizing:border-box}
-  body{margin:0;background:#EFEAE1;font-family:'Archivo',system-ui,sans-serif}
-  a{color:#5B1A1E;text-decoration:none}
-  a:hover{color:#241012}
-  @media (max-width:900px){
-    [style*="grid-template-columns:104px 1fr"]{grid-template-columns:1fr !important}
-    [style*="repeat(3,1fr)"],[style*="repeat(4,1fr)"],[style*="repeat(2,1fr)"]{grid-template-columns:1fr !important}
-  }
-</style>
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div id="4a" style="width:100%;max-width:1280px;margin:0 auto;background:#F7F4EF;overflow:hidden;border-top:6px solid #1A1614;">
+<div class="page">
 
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"></circle><rect x="10" y="14" width="2" height="6" rx="1" fill="currentColor"></rect><rect x="14.5" y="10" width="2" height="14" rx="1" fill="currentColor"></rect><rect x="19" y="12.5" width="2" height="9" rx="1" fill="currentColor"></rect><rect x="23.5" y="15.5" width="2" height="3" rx="1" fill="currentColor"></rect></svg>
+      <span class="nav-wordmark">AllHourDesk</span>
+    </a>
+    <div class="nav-links">
+      <a href="product.html">Product</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="scenarios.html">Scenarios</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html#demo">Book a demo</a>
+    </div>
+  </nav>
 
-      <div style="font-family:'Archivo',system-ui,sans-serif;color:#1A1614">
+  <!-- hero -->
+  <div class="hero has-photo">
+    <div class="hero-rail">
+      <span>23:00</span><span>00:00</span><span class="now">03:12</span><span>05:00</span><span>07:00</span>
+    </div>
+    <div class="hero-body">
+      <span class="hero-kicker">Incoming · 03:12 local · line 1 unattended</span>
+      <h1>Your night manager<br>never sleeps.</h1>
+      <p>AllHourDesk answers, in their language, checks live availability in your PMS, holds the room and takes the payment. Then it logs the whole thing for your morning.</p>
+      <div class="hero-actions">
+        <a class="btn btn-on-dark" href="contact.html#demo">Book a demo</a>
+        <a class="btn btn-ghost-dark" href="product.html">See how it works</a>
+      </div>
+    </div>
+  </div>
 
-        <!-- nav -->
-        <div style="display:flex;align-items:center;justify-content:space-between;padding:22px 56px;border-bottom:1px solid #1A1614">
-          <span style="display:flex;align-items:center;gap:10px"><svg width="28" height="28" viewBox="0 0 34 34" fill="none" style="color:#5B1A1E"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"></circle><rect x="10" y="14" width="2" height="6" rx="1" fill="currentColor"></rect><rect x="14.5" y="10" width="2" height="14" rx="1" fill="currentColor"></rect><rect x="19" y="12.5" width="2" height="9" rx="1" fill="currentColor"></rect><rect x="23.5" y="15.5" width="2" height="3" rx="1" fill="currentColor"></rect></svg><span style="font-family:'Instrument Serif',Georgia,serif;font-size:24px;letter-spacing:-.01em">AllHourDesk</span></span>
-          <div style="display:flex;align-items:center;gap:32px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase">
-            <span>How it works</span><span>Integrations</span><span>Security</span><span>Cases</span>
-            <span style="background:#5B1A1E;color:#F7F4EF;padding:9px 16px;letter-spacing:.08em">Book a demo</span>
-          </div>
+  <!-- log strip -->
+  <div class="logstrip">
+    <div class="logstrip-inner">
+      <div class="logstrip-rail"></div>
+      <div class="logstrip-lines">
+        <span><span class="t">03:12:01</span> &nbsp; call answered · language detected: es-ES</span>
+        <span><span class="t">03:12:38</span> &nbsp; availability queried · 2 rates returned</span>
+        <span><span class="t">03:13:20</span> &nbsp; room held · payment link sent by WhatsApp</span>
+        <span><span class="t">03:16:04</span> &nbsp; paid · reservation confirmed · locator ABX-4471</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- coverage figure -->
+  <div class="figure-band">
+    <figure class="figure fit">
+      <svg viewBox="48 0 848 230" class="dg" role="img" aria-label="A 24-hour timeline showing that a typical property staffs its phone from about 07:00 to 23:00, leaving the overnight hours uncovered even though calls continue to arrive.">
+        <text x="60" y="28" class="dg-lbl">ONE DAY ON THE HOTEL LINE</text>
+
+        <path d="M 60,74 V 62 H 299 V 74" class="dg-dash"/>
+        <text x="179" y="52" class="dg-lbl-ox" text-anchor="middle">NOBODY ON THE DESK</text>
+
+        <rect x="60"  y="90" width="239" height="46" fill="#5B1A1E"/>
+        <rect x="299" y="90" width="547" height="46" fill="#EFEAE1" stroke="#1A1614" stroke-width="1.2"/>
+        <rect x="846" y="90" width="34"  height="46" fill="#5B1A1E"/>
+
+        <text x="572" y="119" class="dg-t" text-anchor="middle">Front desk staffed</text>
+
+        <g class="dg-line">
+          <line x1="60"  y1="136" x2="60"  y2="148"/>
+          <line x1="162" y1="136" x2="162" y2="144"/>
+          <line x1="265" y1="136" x2="265" y2="144"/>
+          <line x1="368" y1="136" x2="368" y2="148"/>
+          <line x1="470" y1="136" x2="470" y2="144"/>
+          <line x1="572" y1="136" x2="572" y2="144"/>
+          <line x1="675" y1="136" x2="675" y2="148"/>
+          <line x1="778" y1="136" x2="778" y2="144"/>
+          <line x1="880" y1="136" x2="880" y2="148"/>
+        </g>
+        <g class="dg-lbl" text-anchor="middle">
+          <text x="60"  y="166">00</text>
+          <text x="162" y="166">03</text>
+          <text x="265" y="166">06</text>
+          <text x="368" y="166">09</text>
+          <text x="470" y="166">12</text>
+          <text x="572" y="166">15</text>
+          <text x="675" y="166">18</text>
+          <text x="778" y="166">21</text>
+          <text x="880" y="166">24</text>
+        </g>
+
+        <line x1="60" y1="196" x2="880" y2="196" class="dg-dash"/>
+        <text x="470" y="216" class="dg-lbl" text-anchor="middle">GUESTS KEEP CALLING ACROSS ALL OF IT</text>
+      </svg>
+      <figcaption>The oxblood hours are the ones AllHourDesk exists for. Adjust the staffed window to your property and the picture is the same shape: the phone outlasts the people.</figcaption>
+    </figure>
+  </div>
+
+  <!-- what it covers -->
+  <div class="rail-row">
+    <div class="rail">01</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:40px;max-width:620px">What the night shift covers</h2>
+      <div class="cols-3">
+        <div>
+          <span class="label">Reservations</span>
+          <p>Quotes real rates from live inventory, holds the room, and handles changes and cancellations on existing bookings.</p>
         </div>
-
-        <!-- hero: oxblood full bleed -->
-        <div style="background:#5B1A1E;color:#F7F4EF;padding:0;display:grid;grid-template-columns:104px 1fr">
-          <div style="border-right:1px solid rgba(247,244,239,.25);padding:40px 0;display:flex;flex-direction:column;align-items:center;gap:26px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:rgba(247,244,239,.6)">
-            <span>23:00</span><span>00:00</span><span style="color:#F7F4EF;border:1px solid rgba(247,244,239,.5);padding:3px 6px">03:12</span><span>05:00</span><span>07:00</span>
-          </div>
-          <div style="padding:76px 56px 66px">
-            <span style="font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,244,239,.7)">Incoming · 03:12 local · line 1 unattended</span>
-            <h1 style="font-family:'Instrument Serif',Georgia,serif;font-size:88px;line-height:.98;font-weight:400;letter-spacing:-.02em;margin:20px 0 0;max-width:840px">Your night manager<br>never sleeps.</h1>
-            <p style="font-size:18px;line-height:1.6;color:rgba(247,244,239,.82);max-width:560px;margin:26px 0 0">AllHourDesk answers, in their language, checks live availability in your PMS, holds the room and takes the payment. Then it logs the whole thing for your morning.</p>
-            <div style="display:flex;gap:14px;margin-top:38px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;text-transform:uppercase">
-              <span style="background:#F7F4EF;color:#5B1A1E;padding:14px 24px;font-weight:700">Book a demo</span>
-              <span style="border:1px solid rgba(247,244,239,.5);color:#F7F4EF;padding:14px 24px">Hear a call</span>
-            </div>
-          </div>
+        <div>
+          <span class="label">Payments</span>
+          <p>Charged off the call through a secure link. No card number is ever spoken aloud or stored on a recording.</p>
         </div>
-
-        <!-- log strip -->
-        <div style="border-bottom:1px solid #1A1614;background:#EFEAE1">
-          <div style="display:grid;grid-template-columns:104px 1fr">
-            <div style="border-right:1px solid #1A1614"></div>
-            <div style="padding:26px 56px;font-family:'JetBrains Mono',monospace;font-size:12.5px;color:#4A423E;display:flex;flex-direction:column;gap:8px">
-              <span><span style="color:#5B1A1E">03:12:01</span> &nbsp; call answered · language detected: es-ES</span>
-              <span><span style="color:#5B1A1E">03:12:38</span> &nbsp; availability queried · 2 rates returned</span>
-              <span><span style="color:#5B1A1E">03:13:20</span> &nbsp; room held · payment link sent by SMS</span>
-              <span><span style="color:#5B1A1E">03:16:04</span> &nbsp; paid · reservation confirmed · locator ABX-4471</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- three duties -->
-        <div style="display:grid;grid-template-columns:104px 1fr;border-bottom:1px solid #1A1614">
-          <div style="border-right:1px solid #1A1614;padding:56px 0 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#8A817B">§ 01</div>
-          <div style="padding:56px 56px 64px">
-            <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:44px;font-weight:400;margin:0 0 40px;max-width:620px">What the night shift covers</h2>
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:0">
-              <div style="padding-right:32px;border-right:1px solid #D7CFC4">
-                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">RESERVATIONS</span>
-                <p style="font-size:15px;line-height:1.65;color:#4A423E;margin:14px 0 0">Quotes real rates from live inventory, holds the room, and handles changes and cancellations on existing bookings.</p>
-              </div>
-              <div style="padding:0 32px;border-right:1px solid #D7CFC4">
-                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">PAYMENTS</span>
-                <p style="font-size:15px;line-height:1.65;color:#4A423E;margin:14px 0 0">Charged off the call through a secure link. No card number is ever spoken aloud or stored on a recording.</p>
-              </div>
-              <div style="padding-left:32px">
-                <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">ENQUIRIES</span>
-                <p style="font-size:15px;line-height:1.65;color:#4A423E;margin:14px 0 0">Check-in times, parking, pets, breakfast, late arrival — answered the same way at 03:00 as at 15:00.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- integrations -->
-        <div style="display:grid;grid-template-columns:104px 1fr;border-bottom:1px solid #1A1614">
-          <div style="border-right:1px solid #1A1614;padding:56px 0 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#8A817B">§ 02</div>
-          <div style="padding:56px 56px 64px">
-            <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:44px;font-weight:400;margin:0 0 12px;max-width:620px">It lives behind the number your guests already know</h2>
-            <p style="font-size:15px;color:#4A423E;max-width:560px;margin:0 0 36px;line-height:1.6">Forward the line to start — minutes to set up, reversible the same day. Port the number or run a SIP trunk when you're ready.</p>
-            <div style="display:flex;flex-direction:column">
-              <div style="display:grid;grid-template-columns:80px 1fr;gap:24px;padding:18px 0;border-top:1px solid #1A1614"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5B1A1E">PBX</span><span style="font-size:15px;color:#4A423E">Call forwarding, number porting, or Elastic SIP trunking.</span></div>
-              <div style="display:grid;grid-template-columns:80px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D7CFC4"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5B1A1E">PMS</span><span style="font-size:15px;color:#4A423E">Reservations written straight into your system of record.</span></div>
-              <div style="display:grid;grid-template-columns:80px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D7CFC4"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5B1A1E">CM</span><span style="font-size:15px;color:#4A423E">Channel managers for pooled inventory across your channels.</span></div>
-              <div style="display:grid;grid-template-columns:80px 1fr;gap:24px;padding:18px 0;border-top:1px solid #D7CFC4;border-bottom:1px solid #1A1614"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#5B1A1E">PAY</span><span style="font-size:15px;color:#4A423E">Hosted payment links, refunds and reconciliation.</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- security: stationery small print -->
-        <div style="display:grid;grid-template-columns:104px 1fr;border-bottom:1px solid #1A1614;background:#EFEAE1">
-          <div style="border-right:1px solid #1A1614;padding:56px 0 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#8A817B">§ 03</div>
-          <div style="padding:56px 56px 60px">
-            <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:44px;font-weight:400;margin:0 0 34px">On the record, by design</h2>
-            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:28px 48px">
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">AI DISCLOSURE</span><p style="font-size:14.5px;color:#4A423E;margin:8px 0 0;line-height:1.6">The agent states that it is an AI at the start of every call, in the caller's language.</p></div>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">CONSENT &amp; RECORDING</span><p style="font-size:14.5px;color:#4A423E;margin:8px 0 0;line-height:1.6">Recording and retention configured per country, under GDPR and local consent law.</p></div>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">PCI-DSS</span><p style="font-size:14.5px;color:#4A423E;margin:8px 0 0;line-height:1.6">Payment stays off the call, keeping card data out of your systems and ours.</p></div>
-              <div><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;color:#5B1A1E">DATA RESIDENCY</span><p style="font-size:14.5px;color:#4A423E;margin:8px 0 0;line-height:1.6">Hosted in-region for European and Middle Eastern properties.</p></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- cases -->
-        <div style="display:grid;grid-template-columns:104px 1fr;border-bottom:1px solid #1A1614">
-          <div style="border-right:1px solid #1A1614;padding:56px 0 0;text-align:center;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#8A817B">§ 04</div>
-          <div style="padding:56px 56px 60px">
-            <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:44px;font-weight:400;margin:0 0 30px">From the properties running it</h2>
-            <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
-              <div style="border:1px solid #D7CFC4;padding:28px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A817B">[ case study slot — property, quote, outcome ]</span></div>
-              <div style="border:1px solid #D7CFC4;padding:28px"><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A817B">[ case study slot — property, quote, outcome ]</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA -->
-        <div style="background:#1A1614;color:#F7F4EF;padding:76px 56px;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap">
-          <div>
-            <h2 style="font-family:'Instrument Serif',Georgia,serif;font-size:48px;font-weight:400;margin:0;max-width:560px">Tonight's calls are already coming in.</h2>
-            <p style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.08em;color:rgba(247,244,239,.6);margin:14px 0 0">WE'LL RUN THE DEMO ON YOUR OWN NUMBER</p>
-          </div>
-          <span style="background:#F7F4EF;color:#5B1A1E;padding:16px 28px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase">Book a demo</span>
-        </div>
-
-        <div style="padding:22px 56px;display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.06em;color:#8A817B">
-          <span style="font-family:'Instrument Serif',Georgia,serif;font-size:16px;color:#1A1614;letter-spacing:0">AllHourDesk</span><span>© 2026</span>
+        <div>
+          <span class="label">Enquiries</span>
+          <p>Check-in times, parking, pets, breakfast, late arrival — answered the same way at 03:00 as at 15:00.</p>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- multilingual greeting band -->
+  <div class="greetings">
+    <div class="greetings-head">
+      <div>
+        <span class="hero-kicker">Language detected, not selected</span>
+        <h2 style="color:var(--ahd-bone);margin-top:12px">It answers in whatever they speak.</h2>
+      </div>
+      <p>No phone menu to navigate in a language you can't read. The agent hears the first sentence and continues in it — including the AI disclosure.</p>
+    </div>
+
+    <div class="greetings-split">
+
+      <div class="greet-photo">
+        <img src="img/receptionist.jpg" width="1200" height="840" loading="lazy"
+             alt="A smiling receptionist at the front desk of a boutique hotel, with greetings in English, Spanish and French floating above her.">
+        <span class="bubble b1"><span class="lang">EN · English</span>Hello</span>
+        <span class="bubble b2"><span class="lang">ES · Español</span>Hola</span>
+        <span class="bubble b3"><span class="lang">FR · Français</span>Bonjour</span>
+      </div>
+
+      <div>
+    <div class="greeting-wall">
+      <span class="greeting accent"><span class="lang">EN · English</span><span class="word xl">Hello</span></span>
+      <span class="greeting"><span class="lang">ES · Español</span><span class="word lg">Hola</span></span>
+      <span class="greeting"><span class="lang">AR · العربية</span><span class="word xl" dir="rtl">مرحبا</span></span>
+      <span class="greeting"><span class="lang">FR · Français</span><span class="word lg">Bonjour</span></span>
+      <span class="greeting"><span class="lang">ZH · 中文</span><span class="word xl">你好</span></span>
+      <span class="greeting"><span class="lang">TR · Türkçe</span><span class="word md">Merhaba</span></span>
+      <span class="greeting"><span class="lang">HI · हिन्दी</span><span class="word lg">नमस्ते</span></span>
+      <span class="greeting"><span class="lang">DE · Deutsch</span><span class="word md">Hallo</span></span>
+      <span class="greeting"><span class="lang">IT · Italiano</span><span class="word lg">Ciao</span></span>
+      <span class="greeting"><span class="lang">PT · Português</span><span class="word md">Olá</span></span>
+      <span class="greeting"><span class="lang">GA · Gaeilge</span><span class="word md">Dia dhuit</span></span>
+      <span class="greeting"><span class="lang">PL · Polski</span><span class="word md">Cześć</span></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="greetings-foot">EUROPEAN LANGUAGES + ARABIC · DETECTED FROM THE CALLER'S FIRST SENTENCE</div>
+  </div>
+
+  <!-- integrations -->
+  <div class="rail-row">
+    <div class="rail">02</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px;max-width:620px">It lives behind the number your guests already know</h2>
+      <p class="small" style="max-width:560px;margin:0 0 36px">Forward the line to start — minutes to set up, reversible the same day. Port the number or run a SIP trunk when you're ready.</p>
+      <div class="rows">
+        <div class="row"><span class="k">PBX</span><span class="v">Call forwarding, number porting, or Elastic SIP trunking.</span></div>
+        <div class="row"><span class="k">PMS</span><span class="v">Reservations written straight into your system of record.</span></div>
+        <div class="row"><span class="k">CM</span><span class="v">Channel managers for pooled inventory across your channels.</span></div>
+        <div class="row"><span class="k">PAY</span><span class="v">Hosted payment links, refunds and reconciliation.</span></div>
+      </div>
+      <p class="small" style="margin-top:22px"><a href="product.html">Full product detail →</a></p>
+    </div>
+  </div>
+
+  <!-- compliance -->
+  <div class="rail-row alt">
+    <div class="rail">03</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:34px">On the record, by design</h2>
+      <div class="grid-2">
+        <div><span class="label">AI disclosure</span><p>The agent states that it is an AI at the start of every call, in the caller's language.</p></div>
+        <div><span class="label">Consent &amp; recording</span><p>Recording and retention configured per country, under GDPR and local consent law.</p></div>
+        <div><span class="label">PCI-DSS</span><p>Payment stays off the call, keeping card data out of your systems and ours.</p></div>
+        <div><span class="label">Data residency</span><p>Hosted in-region for European and Middle Eastern properties.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- scenarios teaser -->
+  <div class="rail-row">
+    <div class="rail">04</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">The calls nobody is awake for</h2>
+      <p class="small" style="max-width:560px;margin:0 0 30px">Four situations the night shift handles end to end — walked through step by step, from the ring to the confirmation.</p>
+      <div class="cols-2">
+        <div>
+          <span class="label">03:12 · Direct booking</span>
+          <p>A traveller whose connection was cancelled needs a room tonight and calls the number on your website.</p>
+        </div>
+        <div>
+          <span class="label">21:40 · Overflow</span>
+          <p>Two guests are checking in at once and the desk phone rings for the fourth time in ten minutes.</p>
+        </div>
+      </div>
+      <p class="small" style="margin-top:26px"><a href="scenarios.html">Read all four scenarios →</a></p>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div>
+      <h2>Tonight's calls are already coming in.</h2>
+      <span class="meta">We'll run the demo on your own number</span>
+    </div>
+    <a class="btn btn-on-dark" href="contact.html#demo">Book a demo</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <span class="nav-wordmark">AllHourDesk</span>
+        <p class="footer-blurb">A 24/7 AI voice concierge that answers your hotel's phone, books against live inventory, and takes payment — for properties in Europe and the Middle East.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">How it works</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="scenarios.html">Scenarios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#demo">Book a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 AllHourDesk</span>
+      <span><a href="mailto:info@allhourdesk.com">info@allhourdesk.com</a></span>
+    </div>
+  </footer>
+
+</div>
 </body>
 </html>

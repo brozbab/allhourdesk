@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About — AllHourDesk</title>
+<meta name="description" content="Who we are and why we're building a voice AI concierge that completes real hotel bookings rather than taking messages.">
+<link rel="icon" href="brand/logo/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav">
+    <a class="nav-brand" href="index.html">
+      <svg width="28" height="28" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" stroke="currentColor" stroke-width="1.4"></circle><rect x="10" y="14" width="2" height="6" rx="1" fill="currentColor"></rect><rect x="14.5" y="10" width="2" height="14" rx="1" fill="currentColor"></rect><rect x="19" y="12.5" width="2" height="9" rx="1" fill="currentColor"></rect><rect x="23.5" y="15.5" width="2" height="3" rx="1" fill="currentColor"></rect></svg>
+      <span class="nav-wordmark">AllHourDesk</span>
+    </a>
+    <div class="nav-links">
+      <a href="product.html">Product</a>
+      <a href="benefits.html">Benefits</a>
+      <a href="scenarios.html">Scenarios</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn-primary btn-sm" href="contact.html#demo">Book a demo</a>
+    </div>
+  </nav>
+
+  <div class="page-head has-photo photo-doors">
+    <span class="hero-kicker">About us</span>
+    <h1>Hotels don't need another chatbot.</h1>
+    <p>They need the phone answered at 3am by something that can actually finish the job — check real availability, hold the room, take the money, and put a confirmed booking in the system. That gap is the whole reason this company exists.</p>
+  </div>
+
+  <!-- why -->
+  <div class="rail-row">
+    <div class="rail">01</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Why we started</h2>
+      <p class="lede" style="margin-bottom:22px">Every independent hotel already has a number guests know, and almost none of them can afford to staff it around the clock.</p>
+      <p class="small" style="max-width:640px">The calls that fall through aren't marginal ones. A guest phoning a hotel at midnight is usually phoning <em>because</em> they need a room tonight — the most booking-ready caller a property will ever get. The existing options are an answering machine, an overflow call centre reading from a script with no access to inventory, or nothing at all. All three end the same way: the guest books somewhere that picked up.</p>
+      <p class="small" style="max-width:640px">Voice AI made the first half of this solvable a while ago. The half nobody had done properly was the transaction — reliably holding real inventory, collecting payment out-of-band, and confirming or unwinding the booking without ever double-selling a room. That's the problem we chose to build around.</p>
+    </div>
+  </div>
+
+  <!-- principles -->
+  <div class="rail-row alt">
+    <div class="rail">02</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:34px">How we build</h2>
+      <div class="grid-2">
+        <div>
+          <span class="label">The back-end is a plug-in</span>
+          <p>Hotels run wildly different systems and we don't get to pick. Every one of them sits behind a single internal interface, so supporting a new PMS never means rebuilding the product around it.</p>
+        </div>
+        <div>
+          <span class="label">Money and inventory get the paranoid treatment</span>
+          <p>Anything touching a payment or a room block is idempotent, logged, and has an explicit compensating action. The "paid but not booked" case is designed for, not discovered in production.</p>
+        </div>
+        <div>
+          <span class="label">Compliance is an input</span>
+          <p>AI disclosure, recording consent, PCI scope and data residency shaped the architecture from the first design document, rather than being audited on afterwards.</p>
+        </div>
+        <div>
+          <span class="label">Say the failure out loud</span>
+          <p>When a lookup fails, the agent tells the caller there's a technical problem instead of inventing a plausible rate. We'd rather lose a booking than create one that isn't real.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- where we are -->
+  <div class="rail-row">
+    <div class="rail">03</div>
+    <div class="rail-body">
+      <h2 style="margin-bottom:12px">Where we are, honestly</h2>
+      <p class="small" style="max-width:640px;margin:0 0 28px">We'd rather you hear this from us than discover it in a demo.</p>
+      <div class="rows">
+        <div class="row"><span class="k">WORKING</span><span class="v">The complete path — call answered, live availability, room held, payment taken, booking confirmed in the PMS, guest messaged — runs end to end today against real inventory and real payments.</span></div>
+        <div class="row"><span class="k">FIRST</span><span class="v">We are onboarding our earliest properties now. If you come on board at this stage, you are genuinely early and you will have influence to match.</span></div>
+        <div class="row"><span class="k">FOCUS</span><span class="v">Europe and the Middle East, which is why multilingual support including Arabic, GDPR and PDPL data residency were requirements from day one rather than later additions.</span></div>
+        <div class="row"><span class="k">NEXT</span><span class="v">Broader PMS coverage, more languages in production, and deeper reporting for multi-property groups.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div>
+      <h2>Come and break it.</h2>
+      <span class="meta">We'd rather find the edge cases with you than after you</span>
+    </div>
+    <a class="btn btn-on-dark" href="contact.html#demo">Book a demo</a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-cols">
+      <div>
+        <span class="nav-wordmark">AllHourDesk</span>
+        <p class="footer-blurb">A 24/7 AI voice concierge that answers your hotel's phone, books against live inventory, and takes payment — for properties in Europe and the Middle East.</p>
+      </div>
+      <div>
+        <h4>Product</h4>
+        <ul>
+          <li><a href="product.html">How it works</a></li>
+          <li><a href="benefits.html">Benefits</a></li>
+          <li><a href="scenarios.html">Scenarios</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#demo">Book a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy policy</a></li>
+          <li><a href="terms.html">Terms of service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© 2026 AllHourDesk</span>
+      <span><a href="mailto:info@allhourdesk.com">info@allhourdesk.com</a></span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
