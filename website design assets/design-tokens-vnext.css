@@ -1,0 +1,72 @@
+/* AllHourDesk website vNext — proposed implementation tokens
+   This evolves the existing brand tokens rather than replacing the brand. */
+
+:root {
+  /* Brand */
+  --ahd-oxblood: #5B1A1E;
+  --ahd-oxblood-deep: #241012;
+  --ahd-ink: #1A1614;
+  --ahd-bone: #F7F4EF;
+  --ahd-bone-2: #EFEAE1;
+  --ahd-clay: #D9A08A;
+
+  /* Text / structure */
+  --ahd-ink-70: #4A423E;
+  --ahd-ink-45: #8A817B;
+  --ahd-rule: #D7CFC4;
+  --ahd-success: #247A59;
+
+  /* Type */
+  --ahd-font-display: 'Instrument Serif', Georgia, serif;
+  --ahd-font-ui: 'Archivo', system-ui, -apple-system, sans-serif;
+  --ahd-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Type scale */
+  --ahd-display-xl: 400 72px/0.98 var(--ahd-font-display);
+  --ahd-h1: 400 64px/1 var(--ahd-font-display);
+  --ahd-h2: 400 44px/1.08 var(--ahd-font-display);
+  --ahd-h3: 400 28px/1.18 var(--ahd-font-display);
+  --ahd-lead: 400 20px/1.55 var(--ahd-font-ui);
+  --ahd-body: 400 17px/1.65 var(--ahd-font-ui);
+  --ahd-small: 400 14px/1.55 var(--ahd-font-ui);
+  --ahd-meta: 500 12px/1.4 var(--ahd-font-ui);
+  --ahd-data: 400 12px/1.5 var(--ahd-font-mono);
+
+  /* Layout */
+  --ahd-max: 1280px;
+  --ahd-copy-max: 720px;
+  --ahd-gutter: 48px;
+  --ahd-section-y: 112px;
+
+  /* Shape */
+  --ahd-radius-button: 8px;
+  --ahd-radius-ui: 10px;
+  --ahd-radius-card: 14px;
+  --ahd-radius-pill: 999px;
+
+  /* Elevation */
+  --ahd-shadow-ui: 0 12px 36px rgba(36, 16, 18, 0.08);
+
+  /* Motion */
+  --ahd-motion-fast: 180ms;
+  --ahd-motion-default: 240ms;
+  --ahd-ease: cubic-bezier(.2,.8,.2,1);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --ahd-gutter: 22px;
+    --ahd-section-y: 64px;
+    --ahd-display-xl: 400 48px/1 var(--ahd-font-display);
+    --ahd-h1: 400 46px/1.02 var(--ahd-font-display);
+    --ahd-h2: 400 36px/1.08 var(--ahd-font-display);
+    --ahd-h3: 400 25px/1.18 var(--ahd-font-display);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ahd-motion-fast: 0ms;
+    --ahd-motion-default: 0ms;
+  }
+}
