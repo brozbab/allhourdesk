@@ -10,7 +10,7 @@ The initial Allhourdesk scope and vision is being deliberately narrowed to optim
 
 For V1, Allhourdesk will primarily operate as an **AI-powered hotel reservation channel**, rather than attempting to become a complete AI front-desk/PMS operations layer.
 
-The primary hotel-system integration for this scope should be the **channel manager / distribution layer**. Direct PMS integrations are deferred as a later product expansion and will be prioritized based on actual customer demand.
+The primary hotel-system integration for this scope should be the **channel manager / hotel distribution and connectivity layer**. This includes both traditional channel managers and broader distribution networks that can expose hotel inventory to Allhourdesk as an authorized booking/demand partner. Direct PMS integrations are deferred as a later product expansion and will be prioritized based on actual customer demand.
 
 The existing Apaleo integration remains valuable and should not be discarded. It becomes the foundation/proof point for a future PMS Operations capability rather than a prerequisite for the core V1 reservation product.
 
@@ -161,7 +161,7 @@ Allhourdesk AI
                                      PMS
 ```
 
-The channel manager is the primary abstraction for reservation commerce.
+The channel manager / distribution network is the primary abstraction for reservation commerce.
 
 The underlying PMS should, as far as possible, be irrelevant to the V1 reservation workflow.
 
@@ -180,6 +180,137 @@ This approach deliberately trades some initial feature breadth for:
 - the ability to validate demand before investing in PMS-specific workflows.
 
 This is an intentional product decision, not simply a technical limitation.
+
+## Channel Partnership & Go-to-Market Strategy
+
+Channel-manager and hotel-distribution relationships are not only an integration strategy. They are also a potential **customer-acquisition and expansion channel** for Allhourdesk.
+
+Allhourdesk should pursue commercial partnerships with selected channel managers and hotel distribution/connectivity networks. The desired partnership combines two elements:
+
+1. **Connectivity** — Allhourdesk is approved as a booking/demand channel and can access authorized hotel availability, rates, restrictions and reservation operations.
+2. **Distribution / GTM** — the partner helps Allhourdesk reach eligible hotels in its network through an agreed referral, marketplace, co-selling, co-marketing, opt-in introduction or similar partner model.
+
+Allhourdesk should not assume that a partner will transfer or expose its raw hotel customer database. The preferred model is an authorized, privacy-compliant route to the partner's hotel ecosystem in which the hotel opts in to engage with or activate Allhourdesk.
+
+### Partner-led customer acquisition
+
+The target flow is:
+
+```text
+Channel Manager / Distribution Network
+                |
+        eligible hotel network
+                |
+     referral / marketplace /
+   co-selling / opt-in introduction
+                |
+                v
+           Allhourdesk
+                |
+        engages hotelier
+                |
+                v
+      Hotel buys Allhourdesk
+                |
+                +---- enables Allhourdesk
+                |     as booking channel
+                |
+                +---- partner receives agreed
+                      referral / revenue-share
+                      commission
+```
+
+Where commercially viable, Allhourdesk is willing to pay the partner an agreed commission or recurring revenue share for hotel customers sourced through that partner.
+
+This aligns incentives: the partner is not merely certifying another technical integration; it has a commercial reason to introduce and promote Allhourdesk across its hotel ecosystem.
+
+### Customer acquisition engines
+
+The V1 growth strategy therefore has two immediate acquisition engines and one future engine:
+
+**1. Direct hotel sales**
+
+Allhourdesk acquires a hotel directly. During onboarding, the hotel connects a supported channel manager/distribution platform and enables Allhourdesk as an authorized booking channel.
+
+**2. Channel-partner-led acquisition**
+
+A channel manager or distribution partner introduces, markets or makes Allhourdesk discoverable to eligible hotels in its network. Allhourdesk converts and onboards the hotel and pays the agreed partner commission/revenue share.
+
+**3. PMS ecosystem acquisition — later**
+
+When the PMS Operations package is introduced, direct PMS integrations, PMS marketplaces and PMS partner programs become an additional acquisition engine.
+
+### Initial partnership targets
+
+The first commercial/technical discovery wave should engage:
+
+- **SiteMinder** — investigate Channels Plus / SiteConnect and partner-led hotel activation;
+- **RateGain** — investigate travel-seller/demand connectivity and access to its hotel supply network;
+- **HyperGuest** — investigate demand-partner connectivity and hotel-network distribution;
+- **Travelgate** — investigate buyer/connectivity APIs and whether its network can provide a scalable abstraction across multiple supply/channel-manager relationships.
+
+Additional channel managers and distribution networks should be evaluated based on geographic coverage, hotel demand and commercial opportunity, especially in **Europe and the Middle East**.
+
+### Partner evaluation criteria
+
+Each prospective partner should be evaluated on both technical and commercial dimensions:
+
+- addressable hotel footprint in Europe;
+- addressable hotel footprint in the Middle East/GCC;
+- independent hotel vs chain coverage;
+- ability for Allhourdesk to operate as a booking/demand channel;
+- real-time availability, inventory, rates and restrictions;
+- reservation creation;
+- amendment/cancellation of Allhourdesk-originated reservations;
+- hotel authorization/activation flow;
+- hotel self-service onboarding potential;
+- API quality and webhook/event support;
+- certification and time to production;
+- payment and PCI implications;
+- reservation ownership and guest-data rules;
+- partner fees;
+- hotel fees or commissions;
+- referral/revenue-share expectations;
+- marketplace/listing opportunities;
+- willingness to co-sell/co-market;
+- ability to introduce Allhourdesk to eligible hotel customers;
+- restrictions on direct commercial engagement with hotels.
+
+### Commercial principle
+
+Allhourdesk should optimize for **distribution leverage, not only API coverage**.
+
+A technically excellent integration with little access to hotel customers may be less valuable at this stage than a partner that provides strong reservation APIs plus an efficient path to hundreds or thousands of potential hotel customers.
+
+The preferred relationship is therefore:
+
+> **One integration + access to a meaningful hotel ecosystem + a mutually beneficial commercial incentive.**
+
+### Multi-partner strategy
+
+Allhourdesk should not make the business dependent on a single channel-manager vendor.
+
+The long-term reservation connectivity layer should support multiple channel managers/distribution networks behind a normalized Allhourdesk reservation interface.
+
+Conceptually:
+
+```text
+                    SiteMinder
+                        |
+                    RateGain
+                        |
+Hotels ---------- HyperGuest --------+
+                        |             |
+                    Travelgate        |
+                        |             v
+                     Others     Allhourdesk
+                                   Reservation
+                                     Layer
+```
+
+This allows Allhourdesk to expand geographic coverage, reduce platform dependency and select the best connectivity/GTM route for each hotel segment.
+
+The immediate objective is **commercial and technical discovery with the leading candidates before committing to unnecessary direct PMS integrations**.
 
 ## Future Product Expansion
 
@@ -257,6 +388,6 @@ However, **additional direct PMS integrations are not a launch dependency for V1
 
 The near-term engineering priority is therefore:
 
-**Channel-manager connectivity + excellent RAG + reliable conversational reservation flow + payments + telephony + simple hotel onboarding + clear escalation.**
+**Channel-manager/distribution connectivity + channel-partner GTM relationships + excellent RAG + reliable conversational reservation flow + payments + telephony + simple hotel onboarding + clear escalation.**
 
 Broad PMS operational coverage comes after product-market evidence.
