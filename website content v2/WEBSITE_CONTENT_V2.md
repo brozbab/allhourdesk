@@ -768,3 +768,14 @@ This paired visual can be more persuasive than a generic “AI is smart” claim
 > Run a genuine booking enquiry demo and see how Allhourdesk responds when a guest needs a human decision.
 
 **Editorial decision:** These four capability pillars should remain highly visible, even though revenue capture is the opening business outcome. They make Allhourdesk differentiated, understandable and more credible to hotel decision-makers.
+
+
+## F6. Approved photographic homepage mockup — asset awaiting binary upload
+
+**Preferred visual:** `website content v2/homepage-photographic-v2.png` (most recent generated photographic mockup; to be uploaded as a PNG). This is the **preferred look and feel** over the vector-only concept in F1. Keep the realistic, warmly lit hotel reception, receptionist portrait, oxblood/ivory palette, call overlay, +27% badge as shown in the creative mockup, integration status strip, and feature cards for **Multilingual support**, **Secure payment links**, and **Human handoff**.
+
+**Production accuracy note:** The `+27%` number is an **unverified design placeholder** and must not be represented as an evidenced performance result until backed by data. Other absolute claims in the illustration (for example instant setup or guaranteed day-one impact) also require validation. Its purpose in this folder is **art direction, not approved publish-ready marketing claims**.
+
+**Asset workflow:** The exact generated PNG was provided in the design conversation. Upload that binary at the path above; do not replace it with the SVG. Once present, this is the preferred embedded reference:
+
+`![Preferred Allhourdesk photographic homepage mockup](./homepage-photographic-v2.png)`
