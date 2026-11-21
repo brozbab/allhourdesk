@@ -59,4 +59,18 @@ The previous two documents named 40 operators but lacked the required **two name
 - **SMARTments:** [Apaleo's 2022 interview](https://apaleo.com/customer-stories/smartments-apaleo) names Daniel Zawe and Markus Leu, but **do not treat Daniel Zawe as current**: [SMARTments' February 2025 company article](https://smartments.com/en/the-future-of-smart-apartments-will-be-smart/) states Daniel Zawe left in 2024 and names Andrea Bastel as new co-Managing Director. This prospect **does not qualify** until two current individuals' direct business contacts are found.
 - **Other Apaleo-supported, still unqualified leads:** [mk hotels](https://www.apaleo.com/customer-stories/mk-hotels-selects-apaleo) (Arno Sonderfeld named in 2022), [arthotel bakker](https://apaleo.com/customer-stories/arthotel-bakker-skyrockets-occupancy) (Sören Hüppe and Neele Benken named in 2024), [Mollie's](https://www.apaleo.com/customer-stories/mollies-motels-apaleo) (Darren Sweetland named in 2023), [SleepinRoomz](https://apaleo.com/customer-stories/sleepinroomz-apaleo) (Jakob Spiewak and Marc Steudle named in July 2026), and [Regiohotel](https://www.apaleo.com/customer-stories/regiohotel) (Johannes Pfützner named in March 2026; already runs an AI phone agent). **None qualifies under the two directly contactable, current-person rule** on this evidence alone.
 
-**Count remains 2/40.** Additional real names without independently published individual business contact details are research leads, not qualified records. LinkedIn profiles remain unverified.
+**Operator count remains 2/40; separately identified hotel properties: 3.** Additional real names without independently published individual business contact details are research leads, not qualified records. LinkedIn profiles remain unverified.
+
+
+## 3. CALMA Berlin Mitte — Berlin, Germany (individual hotel property)
+
+**Operator:** little BIG hotels. **Property address:** Linienstraße 139–140, 10115 Berlin, Germany. **Source:** https://littlebighotels.com/en/contact/ . **Apaleo caveat:** The operator was previously identified as an Apaleo customer; **property-level current PMS usage is not independently confirmed**. This is a separate hotel prospect but **not an independent sales account** from little BIG hotels.
+
+| Named person | Role | Individually attributed work email | Published business phone | Source |
+|---|---|---|---|---|
+| Heiko Grunow | Front Desk Manager, CALMA Berlin Mitte | h.grunow@littlebighotels.com | +49 30 91 53 93 33 | https://littlebighotels.com/en/contact/ |
+| Dennis Mischlewitz | Hotel Operations Manager, Berlin portfolio | d.mischlewitz@littlebighotels.com | +49 30 99 40 45 202 | https://littlebighotels.com/en/contact/ |
+
+**Why contact:** Front-desk lead for day-to-day inbound reservation calls; operations manager for pilot approval and rollout. **LinkedIn:** Personal URLs not independently confirmed.
+
+**Counting rule:** 3 property/operator records with two named contacts, but still only **2 distinct operating companies**. Do not count this as an additional independent customer opportunity.
