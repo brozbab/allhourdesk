@@ -48,3 +48,15 @@ The previous two documents named 40 operators but lacked the required **two name
 6. Follow applicable B2B marketing and privacy laws.
 
 **Research status:** 2/40 qualified. This is not the requested finished 40-hotel database.
+
+
+## Research continuation — 21 November 2026
+
+### Independently rechecked primary sources
+
+- **little BIG hotels:** [Current team/contact directory](https://littlebighotels.com/en/contact/) confirms Maarten van Dongen, Dennis Mischlewitz, Dirk Schumacher and Stefan Kröber with individually attributed professional emails. Additional viable outreach contacts include **Felix (Sales)** at f.gornicki@littlebighotels.com, +49 30 99 40 45 221, and **Ana (Sales)** at a.doamaral@littlebighotels.com, +49 30 99 40 45 223. These are named by first name on the site; the email initials/surnames are not grounds to invent full names.
+- **Hiisi Homes & Hotels:** [Current contact directory](https://www.hiisihomes.fi/meista/yhteystiedot/) confirms Niklas Eriksson (ne@hiisihomes.fi), Markus Veikkolainen (mv@hiisihomes.fi), and Ari Lapveteläinen (al@hiisihomes.fi), with current roles. [Company-published historical profile](https://www.hiisihomes.fi/hiisi-homes-hotels-vahvistaa-edellakavijyyttaan-perustamalla-oman-teknologiaosaston/) additionally identifies Markus at markus@hiisihomes.fi and +358 40 670 8556. The latter are older and should be rechecked before use.
+- **SMARTments:** [Apaleo's 2022 interview](https://apaleo.com/customer-stories/smartments-apaleo) names Daniel Zawe and Markus Leu, but **do not treat Daniel Zawe as current**: [SMARTments' February 2025 company article](https://smartments.com/en/the-future-of-smart-apartments-will-be-smart/) states Daniel Zawe left in 2024 and names Andrea Bastel as new co-Managing Director. This prospect **does not qualify** until two current individuals' direct business contacts are found.
+- **Other Apaleo-supported, still unqualified leads:** [mk hotels](https://www.apaleo.com/customer-stories/mk-hotels-selects-apaleo) (Arno Sonderfeld named in 2022), [arthotel bakker](https://apaleo.com/customer-stories/arthotel-bakker-skyrockets-occupancy) (Sören Hüppe and Neele Benken named in 2024), [Mollie's](https://www.apaleo.com/customer-stories/mollies-motels-apaleo) (Darren Sweetland named in 2023), [SleepinRoomz](https://apaleo.com/customer-stories/sleepinroomz-apaleo) (Jakob Spiewak and Marc Steudle named in July 2026), and [Regiohotel](https://www.apaleo.com/customer-stories/regiohotel) (Johannes Pfützner named in March 2026; already runs an AI phone agent). **None qualifies under the two directly contactable, current-person rule** on this evidence alone.
+
+**Count remains 2/40.** Additional real names without independently published individual business contact details are research leads, not qualified records. LinkedIn profiles remain unverified.
