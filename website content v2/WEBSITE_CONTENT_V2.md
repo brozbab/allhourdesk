@@ -646,3 +646,125 @@ The public URL `https://allhourdesk.com/product.html` was requested for review. 
 > *Keep your hotel number. Start with a controlled pilot.*
 
 **The promise we sell is not “complex AI technology.” It is a hotelier's ability to handle more appropriate guest conversations and turn booking enquiries into valid outcomes—without giving up operational control.**
+
+---
+
+# F. Homepage concept artwork and stronger feature-led selling (revision 2.1)
+
+## F1. Visual reference in this V2 folder
+
+![Allhourdesk V2 homepage concept: call-first hero, multilingual guest support, secure payments, human handoff, live reservations and integration status catalogue](./homepage-concept-v2.svg)
+
+**Asset:** [homepage-concept-v2.svg](./homepage-concept-v2.svg). This is a **revised, repository-native vector illustration** of the homepage direction, not a production screenshot. It preserves the warm bone/oxblood style of the initial rendered concept while making the product's stronger benefits visible. The earlier rendered full-page PNG remains a separate visual reference; it is not embedded as a binary asset in this repository revision.
+
+**Important:** The original initial mockup included “+27% more booking opportunities,” “quick to set up” and “see impact from day one.” Those were illustrative/unsubstantiated statements, **not product results or approved public claims**. The repository concept intentionally removes the fabricated percentage and uses the controlled-pilot message instead. Do not publish the original PNG as live marketing material without replacing unsupported claims.
+
+## F2. Why these features deserve much stronger emphasis
+
+The headline should sell the owner on **recovering calls and booking opportunities**. Immediately below it, explain *why Allhourdesk is worth evaluating*: hotels serve international guests; bookings need a payment step; some calls should reach a person; and the guest needs correct availability.
+
+| Feature | Hotelier value proposition | Recommended consumer-facing copy | Proof required |
+| --- | --- | --- | --- |
+| **Multilingual conversations** | Handle international guest calls without relying on whichever language a staff member speaks | **Welcome guests in their language.** Allhourdesk can carry eligible conversations in supported languages without routing every enquiry through a phone menu. | Tested language list, recognition and fallback; do not promise universal coverage |
+| **Secure hosted payments** | Help an enquiry progress to a payment step without staff taking card details by phone | **Make payment the easy next step.** Where configured, guests receive a secure payment link and the booking flow tracks the outcome. | Actual payment provider, link delivery, payment/reservation state reconciliation and merchant relationship |
+| **Human handoff and escalation** | Protect service quality and reduce anxiety about AI making decisions it cannot safely make | **Know when to bring your team in.** Complex requests and unsupported operations follow configured handoff and escalation rules. | Supported live-transfer vs callback vs message/queue methods and provider/market availability |
+| **Connected availability and reservations** | Avoid invented rates, unnecessary callbacks and disconnected booking systems | **From availability to an eligible reservation.** Use connected rooms, rates, rules and the approved booking flow. | Verified provider-specific transaction capabilities and error outcomes |
+| **After-hours and overflow coverage** | Cover busy and unattended periods without replacing the hotel's reception desk | **Support the calls your team cannot take.** Start with selected hours or no-answer forwarding. | Test routing, existing-number support and failover |
+| **Conversation history and measurable outcomes** | Give owners visibility into what happened, which guests need attention and which bookings came through | **See what was handled—and what needs attention.** Review configured call outcomes, transactions and exceptions. | Validated operational UI/reporting, privacy and consent controls |
+
+### Human handoff terminology: a key distinction
+
+Do **not** silently equate “human escalation” with a tested **live call transfer**. If telephony supports a warm or blind transfer to the reception team, demonstrate it and say “Transfer the caller to your team.” If not, use truthful “Notify your team,” “Arrange a callback,” or “Escalate for staff follow-up.” The fallback method should be specified per deployment. A visible “Talk to our team” option must actually work.
+
+### Payment language: a key distinction
+
+The guest is sent to a secure hosted payment page; **do not imply Allhourdesk receives or holds the hotel's reservation revenue**. Hotel-owned Stripe Connect is the preferred architecture in the hotelier-experience specification, subject to implementation sign-off. Avoid “payments integrated with every PMS” and do not imply every booking can be confirmed before payment state is reconciled.
+
+## F3. Revised homepage above/below-fold hierarchy (supersedes B1 sections 02–04)
+
+**Above the fold:** One powerful outcome headline and primary CTA, with a **real call experience** showing language detection, a correct room/rate query and a safe end state. Do not crowd the hero with six feature cards.
+
+**Immediately beneath the hero: a concise four-feature promise strip** (this is the missing selling layer in the original V2).
+
+### New section 02 — Four reasons your guests and your front desk benefit
+
+**Eyebrow:** MORE THAN AN ANSWERING SERVICE
+
+## A better experience for guests. Less pressure on your team.
+
+**Card 1 — Speak your guest's language**  
+Help international callers get clear answers in supported languages, without depending on who happens to be at the desk.
+
+**Card 2 — Make it easy to complete a booking**  
+Check valid availability and guide the guest to a secure hosted payment flow when the booking is eligible.
+
+**Card 3 — Keep a human in the loop**  
+When a request needs judgment, isn't supported or cannot be completed safely, follow the hotel's configured escalation route.
+
+**Card 4 — Stay connected to real hotel systems**  
+Use live authorised booking information and the hotel's agreed rules instead of guessing a rate or creating a disconnected reservation.
+
+**Bridge line:** The AI handles appropriate conversations. Your hotel sets the boundaries.
+
+**Section-level CTA:** Hear a booking call
+
+### New section 03 — Emotional and operational proof
+
+## The best guest service knows when to answer—and when to hand over.
+
+Show two parallel scenarios, with screenshots or a recorded demo:
+
+**Scenario A: Answer and book.** A caller speaks a supported language, asks about dates, hears available options, gets a secure payment link and receives a confirmation only after the required booking steps succeed.
+
+**Scenario B: Involve the team.** A guest requests an exception or a change to a third-party booking. Allhourdesk explains that staff help is needed and follows the configured handoff method. **Label the exact supported route** (live transfer, callback or alert).
+
+This paired visual can be more persuasive than a generic “AI is smart” claim: it demonstrates both **conversion potential** and **operational safety**.
+
+### New section 04 — Simple workflow
+
+**Heading:** From the first hello to the right next step.
+
+1. **Answer:** The call reaches Allhourdesk under your selected routing policy.
+2. **Understand:** The guest speaks naturally in a tested supported language.
+3. **Act:** Allhourdesk uses approved hotel facts, real availability and permitted booking/payment actions.
+4. **Finish properly:** Confirm a valid outcome or bring in the hotel team through the agreed fallback.
+
+**Design:** Four distinct steps, progressive disclosure for hold/pay/confirm details. The detailed integration block diagram remains deeper on /how-it-works.
+
+### Placement recommendations
+
+- **Hero:** missed booking opportunity + call proof, not a generic feature matrix.
+- **First scroll:** multilingual, secure payments, human handoff, connected reservations (four cards).
+- **Second scroll:** show the contrast between successful automation and human escalation.
+- **Third scroll:** how-it-works, safe pilot and operational simplicity.
+- **Later:** integration catalogue, measurable proof, trust, FAQs and final CTA.
+- On **/platform/reservations**, expand hosted payment and confirmation states.
+- On **/solutions/guest-enquiries**, expand multilingual support with a *validated* language demonstration.
+- On **/how-it-works**, show failure states and the actual handoff route.
+- On **/trust**, document payment ownership, consent, policies and escalation.
+
+## F4. Visual and implementation notes for the revised mockup
+
+- Do not reuse the original `+27%` statistic; replace performance widgets with verified deployment data or qualitative workflow statuses.
+- Prefer the **actual brand identity** and type hierarchy from the existing repository, not invented partner badges or third-party endorsement.
+- Show user-friendly action states such as “Language understood,” “Availability checked,” “Payment link sent,” “Needs your team,” and “Reservation confirmed” only if the scenario's action really occurred; label visual demo states as illustrative.
+- Make multilingual examples readable but do not name unsupported languages.
+- Differentiate “human escalation offered” from “live transfer completed.”
+- Ensure an on-page demo video includes captions and a written transcript.
+- The visual feature cards are the **sales argument**; detailed system diagrams are the **technical verification** for buyers who want depth.
+
+## F5. V2 homepage copy — compact revised excerpt
+
+> **AI VOICE & RESERVATIONS FOR HOTELS**  
+> # Every booking enquiry deserves an answer.  
+> Your front desk cannot answer every call. Allhourdesk helps your hotel handle guest enquiries, communicate in supported languages and guide eligible callers towards reservations using connected hotel information.  
+> **Book a demo** · **See how it works**  
+> *Keep your number. Start with a controlled pilot.*
+>
+> ## A better experience for guests. Less pressure on your team.
+> **Speak your guest's language** · **Make payment the easy next step** · **Know when to bring your team in** · **Stay connected to live availability**
+>
+> ## It answers, books—or knows when to ask for help.
+> Run a genuine booking enquiry demo and see how Allhourdesk responds when a guest needs a human decision.
+
+**Editorial decision:** These four capability pillars should remain highly visible, even though revenue capture is the opening business outcome. They make Allhourdesk differentiated, understandable and more credible to hotel decision-makers.
